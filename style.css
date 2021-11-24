@@ -1,0 +1,35 @@
+body{
+    color: black;
+    background-color: #faebd7;
+    font-family: cursive;
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: green;    
+}
+
+#heading-differentiation{
+    color: red;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#italicize{
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th{
+     background-color:grey; 
+  }

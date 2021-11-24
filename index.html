@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My test page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="underline">Introduction to CSS</h1>
+    <p>(Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+        <br/><br/><span id="italicize">CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN.</span>
+    </p>
+    <h2 class="underline">What is CSS?</h2>
+    <p>Like HTML, CSS is not a programming language. It's not a markup language either. <strong>CSS is a style sheet language.</strong> CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:</p>
+    <h2 id="heading-differentiation" >Anatomy of a CSS ruleset</h2>
+    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" width="500">
+    <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</p>
+    <ol>
+        <li><strong>Selector</strong><br><br>
+            This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example,'p' elements). To style a different element, change the selector.</li><br>
+        <li><strong>Declaration</strong><br><br>
+            This is a single rule like color: red;. It specifies which of the element's properties you want to style.</li><br>
+        <li><strong>Properties</strong><br><br>
+            These are ways in which you can style an HTML element. (In this example, color is a property of the 'p' elements.) In CSS, you choose which properties you want to affect in the rule.</li><br>
+        <li><strong>Property value</strong><br><br>
+            To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</li><br>
+        </ol>        
+    </ol>
+    <p>Note the other important parts of the syntax:</p>
+    <ul>
+        <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+        <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+        <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+    </ul>
+
+    <h2>Different types of selectors</h2>
+    <p>There are many different types of selectors. The examples above use element selectors, which select all elements of a given type. But we can make more specific selections as well. Here are some of the more common types of selectors:</p>
+    <table>
+        <tr>
+            <th>Selector name</th>
+            <th>What does it select</th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>Element selector (sometimes called a tag or type selector)</td>
+            <td>All HTML elements of the specified type.</td>
+            <td>p <br> selects 'p'</td>
+        </tr>
+
+        <tr>
+            <td>ID selector</td>
+            <td>The element on the page with the specified ID. On a given HTML page, each id value should be unique.</td>
+            <td>#my-id <br> selects 'p id="my-id"'' or <br>'a' id="my-id"></td>
+        </tr>
+
+        <tr>
+            <td>Class selector</td>
+            <td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.</td>
+            <td>.my-class <br>selects 'p class="my-class" and 'a class="my-class"></td>
+        </tr>
+
+        <tr>
+            <td>Attribute selector</td>
+            <td>The element(s) on the page with the specified attribute.</td>
+            <td>img[src] <br>selects (img src="myimage.png") but <br> not (img)</td>
+        </tr>
+
+        <tr>
+            <td>Pseudo-class selector</td>
+            <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
+            <td>a:hover <br> selects (a), but only when the mouse <br> pointer is hovering over the link.</td>
+        </tr>
+    </table>
+</body>
+</html>
